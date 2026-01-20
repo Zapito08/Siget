@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siget - Menú Principal</title>
+    <link rel="stylesheet" href="../Login/Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="imgNavbar" src="/Img/logo-sena-verde-complementario-png-2022.png" alt="SENA">
+        <div class="user-info">
+            <span class="user-name">Nombre Usuario</span>
+            <i class="fa-solid fa-circle-user user-avatar"></i>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="Login">
+            <h1>Bienvenido al SIGET</h1>
+            <h2>Elige para generar el certificado</h2>
+            <div class="menu-options">
+                <button type="button" id="btn-salario" class="menu-card">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <span>Salario</span>
+                </button>
+                <button type="button" id="btn-funciones" class="menu-card">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span>Funciones</span>
+                </button>
+                <button type="button" id="btn-historia" class="menu-card">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Historia Laboral</span>
+                </button>
+                <button type="button" id="btn-comision" class="menu-card">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <span>Comisión Exterior</span>
+                </button>
+                <button type="button" id="btn-pension" class="menu-card">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                    <span>F. Pensión</span>
+                </button>
+            </div>
+            <div class="logout-container">
+                <button type="button" id="btn-logout" class="btn-secondary">
+                    <i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión
+                </button>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2026 SIGET - Todos los derechos reservados</p>
+        </footer>
+    </div>
+    <div id="toast" class="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Operación exitosa</span>
+    </div>
+    <script src="Menu.js"></script>
+</body>
+</html>

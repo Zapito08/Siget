@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Login {
+    background-color: #ffffff;
+    width: 430px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-top: 6px solid #39A900;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 140px;
+}
+
+.Login h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555555;
+    font-size: 16px;
+}
+
+select, input {
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+select:focus, input:focus {
+    border-color: #39A900;
+}
+
+.olvido-pass {
+    text-align: right;
+    margin-bottom: 20px;
+    color: #39A900;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+button {
+    padding: 15px;
+    background-color:  #39A900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color:  #297502;
+}
+
+.footer {
+    margin-top: 20px;
+    color: #888888;
+    font-size: 14px;
+}
