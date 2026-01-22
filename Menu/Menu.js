@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i><span>Descargando...</span>';
 
         console.log(`Iniciando descarga para: ${tipo}`);
+        // TODO: Conectar con el backend para generar y descargar el certificado real
         setTimeout(() => {
             btn.classList.remove('is-loading');
             btn.innerHTML = originalContent;
