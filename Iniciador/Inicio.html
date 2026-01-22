@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SigetBot</title>
+    <link rel="stylesheet" href="Inicio.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="left-section">
+        <div class="container">
+            <img src="https://www.sena.edu.co/Style%20Library/alayout/images/logoSena.png" alt="Logo Sena" class="logo">
+            <h1>SigeBot</h1>
+            <button id="btn-iniciar" onclick="iniciarSoftware()">Iniciar </button>
+        </div>
+    </div>
+    <div class="right-section">
+        <img src="../img/Gemini_Generated_Image_71jafd71jafd71ja.png" alt="Fondo SigeBot">
+    </div>
+
+    <script>
+        function iniciarSoftware() {
+            Swal.fire({
+                title: 'SigeBot',
+                text: 'Iniciando el software...',
+                icon: 'success',
+                confirmButtonColor: '#39a900',
+                confirmButtonText: 'Aceptar',
+                heightAuto: false,
+                scrollbarPadding: false
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = '../Login/Login.html';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

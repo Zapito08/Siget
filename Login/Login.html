@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siget</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Login">
+            <div class="logo-container">
+                <img src="/Img/logo-sena-verde-complementario-png-2022.png" alt="Logo SENA">
+            </div>
+            <h1>Ingreso SIGET</h1>
+            <form>
+                <label for="tipo_documento">Tipo de documento:</label>
+                <select name="tipo_documento" id="tipo_documento" required>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="TI">Tarjeta de Identidad</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="CE">Pasaporte</option>
+                </select>
+                <label for="documento">Documento:</label>
+                <input type="number" name="documento" id="documento" placeholder="Ingrese su documento" required>
+                <a href="/Menu/Menu.html"><button type="submit">Entrar</button></a>
+            </form>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2026 SIGET - Todos los derechos reservados</p>
+        </footer>
+    </div>
+    <script src="Login.js"></script>
+</body>
+</html>
