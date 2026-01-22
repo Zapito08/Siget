@@ -19,12 +19,8 @@ body {
 
 .Login {
     background-color: #ffffff;
-<<<<<<< HEAD
     width: 90%;
     max-width: 430px;
-=======
-    width: 430px;
->>>>>>> 3880d07fc0237d7ebad13b90a20e87588ec7aa06
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -50,10 +46,7 @@ body {
 form {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     text-align: center;
-=======
->>>>>>> 3880d07fc0237d7ebad13b90a20e87588ec7aa06
 }
 
 label {
@@ -61,10 +54,7 @@ label {
     font-weight: bold;
     color: #555555;
     font-size: 16px;
-<<<<<<< HEAD
     text-align: left;
-=======
->>>>>>> 3880d07fc0237d7ebad13b90a20e87588ec7aa06
 }
 
 select, input {
