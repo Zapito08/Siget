@@ -3,9 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (form) {
         form.addEventListener('submit', (e) => {
-            e.preventDefault(); // Evita que el formulario recargue la página
-
-            // Aquí simularíamos la validación con el backend
+            e.preventDefault(); 
             const documento = document.getElementById('documento').value;
 
             if (!documento.trim()) {
@@ -13,10 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Guardamos el documento en sessionStorage
             sessionStorage.setItem('documentoUsuario', documento);
 
-            // Redirigimos al menú
             window.location.href = '../Menu/Menu.html';
         });
     }

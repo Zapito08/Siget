@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cargarUsuario = () => {
-        // Recuperar del sessionStorage
         const documentoUsuario = sessionStorage.getItem('documentoUsuario');
 
         const userNameDisplay = document.querySelector('.user-name');
         if (userNameDisplay) {
             if (documentoUsuario) {
-                // Si es un número válido, formateamos con puntos
                 if (!isNaN(documentoUsuario)) {
                     userNameDisplay.textContent = new Intl.NumberFormat('es-CO').format(documentoUsuario);
                 } else {
@@ -32,17 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const descargarCertificado = (tipo, btn) => {
-        // Evitar múltiples clics si ya está cargando
         if (btn.classList.contains('is-loading')) return;
 
         const originalContent = btn.innerHTML;
-
-        // Cambiar estado a cargando (Spinner)
         btn.classList.add('is-loading');
         btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i><span>Descargando...</span>';
 
         console.log(`Iniciando descarga para: ${tipo}`);
-        // TODO: Conectar con el backend para generar y descargar el certificado real
         setTimeout(() => {
             btn.classList.remove('is-loading');
             btn.innerHTML = originalContent;
@@ -65,11 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Lógica para cerrar sesión
     const btnLogout = document.getElementById('btn-logout');
     if (btnLogout) {
         btnLogout.addEventListener('click', () => {
-            sessionStorage.removeItem('documentoUsuario'); // Limpiar sesión
+            sessionStorage.removeItem('documentoUsuario');
             window.location.href = '../Login/Login.html';
         });
     }
