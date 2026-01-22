@@ -23,10 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const toast = document.getElementById('toast');
     const toastMessage = document.getElementById('toast-message');
 
+    let toastTimeout;
     const showToast = (message) => {
         toastMessage.textContent = message;
         toast.classList.add('show');
-        setTimeout(() => { toast.classList.remove('show'); }, 3000);
+        if (toastTimeout) clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(() => { toast.classList.remove('show'); }, 3000);
     };
 
     const descargarCertificado = (tipo, btn) => {

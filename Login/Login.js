@@ -7,6 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Aquí simularíamos la validación con el backend
             const documento = document.getElementById('documento').value;
+
+            if (!documento.trim()) {
+                alert('Por favor, ingrese su número de documento.');
+                return;
+            }
+
             // Guardamos el documento en sessionStorage
             sessionStorage.setItem('documentoUsuario', documento);
 
